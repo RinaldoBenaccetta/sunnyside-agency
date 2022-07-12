@@ -1,0 +1,10 @@
+.main {
+    width: 100%;
+    overflow: hidden;
+
+    &__transform__image {
+        height: 312px;
+        position: relative;
+        object-fit: cover;
+    }
+}

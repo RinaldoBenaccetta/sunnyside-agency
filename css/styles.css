@@ -471,4 +471,21 @@ h1, h2, h3, h4 {
   .header__go-down {
     margin-top: 96px;
   }
+}
+.main {
+  width: 100%;
+  overflow: hidden;
+}
+.main__transform__image {
+  height: 312px;
+  position: relative;
+  object-fit: cover;
+}
+
+body {
+  background-color: green;
+}
+
+* {
+  border: 1px solid red;
 }/*# sourceMappingURL=styles.css.map */
