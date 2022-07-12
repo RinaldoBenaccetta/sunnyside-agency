@@ -1,4 +1,4 @@
-$dev: true;
+$dev: false;
 
 //// colors
 // primary
@@ -17,4 +17,10 @@ $color-secondary-second: hsl(213, 9%, 39%);
 $color-secondary-third: hsl(232, 10%, 55%);
 $color-secondary-fourth: hsl(210, 4%, 67%);
 $color-secondary-fifth: hsl(0, 0%, 100%);
+ 
+//// layout
 
+$height-mobile: 538px;
+
+$margin-side-mobile: 24px;
+$margin-top-mobile: 32px;
