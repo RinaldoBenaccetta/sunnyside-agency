@@ -307,6 +307,10 @@ template {
   display: none;
 }
 
+body {
+  font-family: "Barlow", sans-serif;
+}
+
 h1, h2, h3, h4 {
   font-family: "Fraunces", serif;
 }
@@ -318,7 +322,20 @@ h1, h2, h3, h4 {
   text-align: center;
   color: hsl(0deg, 0%, 100%);
 }
-
+@media screen and (min-width: 800px) {
+  .header__title {
+    font-size: 56px;
+    line-height: 69.05px;
+    letter-spacing: 8.75px;
+  }
+}
+.header__main-nav__link {
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.128571px;
+  color: hsl(0deg, 0%, 100%);
+  text-decoration: none;
+}
 .header {
   height: 538px;
   overflow: hidden;
@@ -341,6 +358,11 @@ h1, h2, h3, h4 {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 800px) {
+  .header__content {
+    padding: 46px 40px;
+  }
+}
 .header__content__header {
   display: flex;
   justify-content: space-between;
@@ -353,11 +375,50 @@ h1, h2, h3, h4 {
 .header__logo {
   height: 24px;
 }
-.header__main-nav {
+@media screen and (min-width: 800px) {
+  .header__logo {
+    height: 33px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .header__main-nav {
+    position: absolute;
+    top: 18px;
+    right: 0;
+  }
+}
+.header__main-nav__link {
+  display: block;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 15px 30px;
+}
+.header__main-nav__link:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 28px;
+}
+.header__main-nav__hamburger__item {
   height: 18px;
+}
+@media screen and (min-width: 800px) {
+  .header__main-nav__hamburger__item {
+    display: none;
+  }
 }
 .header__main-nav__list {
   display: none;
+}
+@media screen and (min-width: 800px) {
+  .header__main-nav__list {
+    display: flex;
+    list-style-type: none;
+    height: 48px;
+    margin: 0;
+  }
+}
+.header__main-nav__item {
+  margin: auto 0 auto 47px;
 }
 .header__title {
   width: 100%;
@@ -368,4 +429,11 @@ h1, h2, h3, h4 {
   margin-bottom: 112px;
   justify-self: end;
   align-self: center;
+}
+body {
+  background-color: green;
+}
+
+* {
+  border: 1px solid red;
 }/*# sourceMappingURL=styles.css.map */

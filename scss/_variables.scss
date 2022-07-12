@@ -1,4 +1,4 @@
-$dev: false;
+$dev: true;
 
 //// colors
 // primary
@@ -24,3 +24,10 @@ $height-mobile: 538px;
 
 $margin-side-mobile: 24px;
 $margin-top-mobile: 32px;
+
+$margin-side-desktop: 40px;
+$margin-top-desktop: 46px;
+
+//// responsive
+
+$width-large: 800px;
