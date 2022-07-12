@@ -56,8 +56,8 @@
 
         @include screen-large {
             position: absolute;
-            top: 18px;
-            right: 0;
+            top: 28px;
+            right: 48px;
         }
 
         &__link {
@@ -69,13 +69,20 @@
             padding: 15px 30px;
     
             &:hover {
-                background-color: $color-secondary-fifth;
-                background: rgba(255, 255, 255, 0.25);
+                background: rgba(255, 255, 255, 0.25); // white 25% transparent
                 border-radius: 28px;
             }
     
             &--active {
-    
+                display: block;
+
+                box-sizing: border-box;
+
+                height: 100%;
+                padding: 15px 30px;
+
+                background: $color-secondary-fifth;
+                border-radius: 28px;
             }
         }
 

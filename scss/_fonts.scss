@@ -4,6 +4,7 @@ body {
 
 h1, h2, h3, h4 {
     font-family: 'Fraunces', serif;
+    font-weight: 900;
 }
 
 .header {
@@ -29,11 +30,17 @@ h1, h2, h3, h4 {
         text-decoration: none;
 
         &:hover {
-
+            font-family: 'Fraunces', serif;
+            text-transform: uppercase;
+            font-weight: 700;
         }
 
         &--active {
-
+            font-family: 'Fraunces', serif;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: $color-secondary-first;
+            text-decoration: none;
         }
     }
 }
