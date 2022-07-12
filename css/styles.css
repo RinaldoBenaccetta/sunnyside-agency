@@ -316,4 +316,22 @@ h1, h2, h3, h4 {
   line-height: 49.32px;
   letter-spacing: 6.25px;
   text-align: center;
+}
+
+body {
+  background-color: green;
+}
+
+.header {
+  height: 538px;
+  overflow: hidden;
+}
+.header__background {
+  height: 538px;
+  z-index: 0;
+}
+.header__content {
+  position: relative;
+  top: 0;
+  left: 0;
 }/*# sourceMappingURL=styles.css.map */
