@@ -1,9 +1,19 @@
 .header {
     height: $height-mobile;
+    width: 100%;
     overflow: hidden;
+
+    @include screen-large {
+        height: $height-desktop;
+    }
     
     &__background {
         height: $height-mobile;
+
+        @include screen-large {
+            height: $height-desktop;
+        }
+
         width: 100%;
 
         z-index: 0;
@@ -19,7 +29,7 @@
 
         box-sizing: border-box;
         width: 100%;
-        height: $height-mobile;
+        
 
         z-index: 1;
 
@@ -56,7 +66,7 @@
 
         @include screen-large {
             position: absolute;
-            top: 28px;
+            top: 36px;
             right: 48px;
         }
 
@@ -69,7 +79,9 @@
             padding: 15px 30px;
     
             &:hover {
-                background: rgba(255, 255, 255, 0.25); // white 25% transparent
+                // white 25% transparent
+                background: rgba(255, 255, 255, 0.25);
+
                 border-radius: 28px;
             }
     
@@ -115,15 +127,24 @@
         width: 100%;
 
         margin-top: 88px;
+        margin-bottom: 0;
+
+        @include screen-large {
+            margin-top: 116px;
+        }
     }
 
     &__go-down {
         width: 30px;
 
-        margin-bottom: 112px;
+        margin-top: 52px;
 
         justify-self: end;
         align-self: center;
+
+        @include screen-large {
+            margin-top: 96px;
+        }
     }
 
     @include screen-large {

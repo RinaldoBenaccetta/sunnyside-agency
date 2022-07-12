@@ -352,7 +352,13 @@ h1, h2, h3, h4 {
 
 .header {
   height: 538px;
+  width: 100%;
   overflow: hidden;
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    height: 800px;
+  }
 }
 .header__background {
   height: 538px;
@@ -361,12 +367,16 @@ h1, h2, h3, h4 {
   position: relative;
   object-fit: cover;
 }
+@media screen and (min-width: 1024px) {
+  .header__background {
+    height: 800px;
+  }
+}
 .header__content {
   position: absolute;
   top: 0;
   box-sizing: border-box;
   width: 100%;
-  height: 538px;
   z-index: 1;
   padding: 32px 24px;
   display: flex;
@@ -397,7 +407,7 @@ h1, h2, h3, h4 {
 @media screen and (min-width: 1024px) {
   .header__main-nav {
     position: absolute;
-    top: 28px;
+    top: 36px;
     right: 48px;
   }
 }
@@ -444,10 +454,21 @@ h1, h2, h3, h4 {
 .header__title {
   width: 100%;
   margin-top: 88px;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 1024px) {
+  .header__title {
+    margin-top: 116px;
+  }
 }
 .header__go-down {
   width: 30px;
-  margin-bottom: 112px;
+  margin-top: 52px;
   justify-self: end;
   align-self: center;
+}
+@media screen and (min-width: 1024px) {
+  .header__go-down {
+    margin-top: 96px;
+  }
 }/*# sourceMappingURL=styles.css.map */
