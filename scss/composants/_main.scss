@@ -6,27 +6,6 @@
 
         background-color: $color-secondary-fifth;
 
-        @include screen-large {
-
-            // define left and right padding 
-            section {
-                &:nth-child(odd) {
-                    .main__first-section__content {
-                        padding-right: calc(50vw / 6.55);// right smaller
-                        padding-left: calc(50vw / 4.36);
-                    }
-                }
-
-                &:nth-child(even) {
-                    .main__first-section__content {
-                        padding-right: calc(50vw / 4.36);
-                        padding-left: calc(50vw / 6.55);//left smaller
-                    }
-                } 
-            }
-
-        }
-
         &__content {
             box-sizing: border-box;
             padding: ($margin-top-mobile*2) $margin-side-mobile ($margin-top-mobile*2);
@@ -55,6 +34,21 @@
             &:nth-child(odd) {
                 flex-direction: row-reverse;
             }
+
+            // define left and right padding 
+            &:nth-child(odd) {
+                .main__first-section__content {
+                    padding-right: calc(50vw / 6.55);// right smaller
+                    padding-left: calc(50vw / 4.36);
+                }
+            }
+
+            &:nth-child(even) {
+                .main__first-section__content {
+                    padding-right: calc(50vw / 4.36);
+                    padding-left: calc(50vw / 6.55);//left smaller
+                }
+            } 
             
         }
 
