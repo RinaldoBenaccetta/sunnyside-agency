@@ -147,6 +147,10 @@
 
     &__second-section {
 
+        @include screen-large {
+            display: flex;
+        }
+
         &__content {
             position: absolute;
             z-index: 1;
@@ -155,6 +159,10 @@
             box-sizing: border-box;
 
             padding: 0 $margin-side-mobile 59px;
+
+            @include screen-large {
+                padding: 0 calc(50vw / 3.79) 59px;
+            }
 
             height: 100%;
 
@@ -180,6 +188,11 @@
         position: relative;
 
         height: calc(100vw * 1.6);// always same aspect ratio
+
+        @include screen-large {
+            width: 50%;
+            height: calc(50vw / 1.2);// always same aspect ratio
+        }
 
         &__image {
             width: 100%;

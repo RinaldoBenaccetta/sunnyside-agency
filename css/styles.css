@@ -631,6 +631,11 @@ h1, h2, h3, h4 {
   background-color: hsl(7deg, 99%, 70%);
   border-color: hsl(7deg, 99%, 70%);
 }
+@media screen and (min-width: 1024px) {
+  .main__second-section {
+    display: flex;
+  }
+}
 .main__second-section__content {
   position: absolute;
   z-index: 1;
@@ -644,6 +649,11 @@ h1, h2, h3, h4 {
   align-items: center;
   border-color: yellow;
 }
+@media screen and (min-width: 1024px) {
+  .main__second-section__content {
+    padding: 0 13.1926121372vw 59px;
+  }
+}
 .main__second-section__title {
   margin: 0 0 27px;
 }
@@ -653,6 +663,12 @@ h1, h2, h3, h4 {
 .main__graphic-design, .main__photography {
   position: relative;
   height: 160vw;
+}
+@media screen and (min-width: 1024px) {
+  .main__graphic-design, .main__photography {
+    width: 50%;
+    height: 41.6666666667vw;
+  }
 }
 .main__graphic-design__image, .main__photography__image {
   width: 100%;
