@@ -1,20 +1,19 @@
 .header {
-    height: $height-mobile;
+
     width: 100%;
+    height: calc(100vw / 0.697);// always same aspect ratio
+
     overflow: hidden;
 
     @include screen-large {
         height: $height-desktop;
+        height: calc(100vw / 1.8);// always same aspect ratio
     }
     
     &__background {
-        height: $height-mobile;
-
-        @include screen-large {
-            height: $height-desktop;
-        }
 
         width: 100%;
+        height: 100%;
 
         z-index: 0;
 
