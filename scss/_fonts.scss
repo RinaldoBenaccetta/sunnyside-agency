@@ -107,4 +107,31 @@ h1, h2, h3, h4 {
             
         }
     }
+
+    &__second-section  {
+
+        &__title {
+            font-family: 'Fraunces', serif;
+            font-weight: 900;
+            font-size: 28px;
+            line-height: 35px;
+            text-align: center;
+            letter-spacing: -0.2px;
+        }
+
+        &__text {
+            font-size: 16px;
+            line-height: 27px;
+            text-align: center;
+            letter-spacing: -0.114286px;
+        }
+    }
+
+    &__graphic-design {
+        color: $color-primary-third;
+    }
+
+    &__photography {
+        color: $color-primary-fourth;
+    }
 }

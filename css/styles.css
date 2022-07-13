@@ -398,6 +398,26 @@ h1, h2, h3, h4 {
   text-decoration: none;
   color: hsl(212deg, 27%, 19%);
 }
+.main__second-section__title {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: -0.2px;
+}
+.main__second-section__text {
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: -0.114286px;
+}
+.main__graphic-design {
+  color: hsl(167deg, 40%, 24%);
+}
+.main__photography {
+  color: hsl(198deg, 62%, 26%);
+}
 
 .header {
   height: 538px;
@@ -615,16 +635,30 @@ h1, h2, h3, h4 {
   position: absolute;
   z-index: 1;
   top: 0;
+  box-sizing: border-box;
+  padding: 0 24px 59px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  border-color: yellow;
+}
+.main__second-section__title {
+  margin: 0 0 27px;
+}
+.main__second-section__text {
+  margin: 0;
 }
 .main__graphic-design, .main__photography {
   position: relative;
+  height: 160vw;
 }
 .main__graphic-design__image, .main__photography__image {
   width: 100%;
-  height: 160vw;
+  height: 100%;
   object-fit: cover;
   z-index: 0;
-  opacity: 0.5;
   /*@include screen-large {
       width: 50%;
       height: calc(50vw / 1.2);// always same aspect ratio
