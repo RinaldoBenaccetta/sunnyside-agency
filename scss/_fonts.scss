@@ -2,9 +2,14 @@ body {
     font-family: 'Barlow', sans-serif;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
     font-family: 'Fraunces', serif;
     font-weight: 900; // we use 700 and 900 in page, titles are 900
+}
+
+h4 {
+    font-family: 'Barlow, sans-serif';
+    font-weight: 600;
 }
 
 .header {
@@ -94,8 +99,6 @@ h1, h2, h3, h4 {
             }
 
             a {
-                font-family: 'Fraunces', serif;
-                font-weight: 900;
                 font-size: 15px;
                 line-height: 25px;
                 letter-spacing: 1px;
@@ -111,8 +114,6 @@ h1, h2, h3, h4 {
     &__second-section  {
 
         &__title {
-            font-family: 'Fraunces', serif;
-            font-weight: 900;
             font-size: 28px;
             line-height: 35px;
             text-align: center;
@@ -133,5 +134,45 @@ h1, h2, h3, h4 {
 
     &__photography {
         color: $color-primary-fourth;
+    }
+
+    &__testimonials {
+        &__title {
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+
+            color: $color-secondary-fourth;
+        }
+
+        &__people__quote {
+            font-size: 18px;
+            line-height: 32px;
+            text-align: center;
+            letter-spacing: -0.128571px;
+
+            color: $color-secondary-second;
+        }
+
+        &__name {
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+            letter-spacing: -0.128571px;
+
+            color: $color-secondary-first;
+
+        }
+
+        &__function {
+            font-size: 14px;
+            line-height: 25px;
+            text-align: center;
+            letter-spacing: -0.1px;
+
+            color: $color-secondary-fourth;
+        }
     }
 }

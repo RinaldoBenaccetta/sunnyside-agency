@@ -200,13 +200,28 @@
             object-fit: cover;
 
             z-index: 0;
-
-            //opacity: .5;
-
-            /*@include screen-large {
-                width: 50%;
-                height: calc(50vw / 1.2);// always same aspect ratio
-            }*/
         }
+    }
+
+    &__testimonials {
+
+        padding: 2*$margin-top-mobile $margin-side-mobile;
+
+        &__title {
+            padding-bottom: 2*$margin-top-mobile;
+        }
+
+        &__people {
+            padding-bottom: 86px;
+        }
+
+        &__image {
+            //center image
+            display: block;
+            margin: auto;
+
+            border-radius: 50%;
+        }
+
     }
 }
