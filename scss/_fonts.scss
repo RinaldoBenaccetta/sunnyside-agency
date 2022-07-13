@@ -44,3 +44,47 @@ h1, h2, h3, h4 {
         }
     }
 }
+
+.main {
+
+    &__first-section {
+
+        &__title {
+            font-size: 32px;
+            line-height: 39px;
+            letter-spacing: -0.228571px;
+
+            text-align: center;
+
+            color: $color-secondary-first;
+        }
+
+        &__text {
+            font-size: 18px;
+            line-height: 30px;
+            letter-spacing: -0.128571px;
+
+            text-align: center;
+
+            color: $color-secondary-third;
+        }
+
+        &__more-link {
+
+            text-align: center;
+
+            a {
+                font-family: 'Fraunces', serif;
+                font-weight: 900;
+                font-size: 15px;
+                line-height: 25px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                text-decoration:none;
+
+                color: $color-secondary-first; 
+            }
+            
+        }
+    }
+}

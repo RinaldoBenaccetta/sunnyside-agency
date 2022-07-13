@@ -2,9 +2,33 @@
     width: 100%;
     overflow: hidden;
 
-    &__transform__image {
-        height: 312px;
+    &__transform__image, &__stand-out__image {
+        width: 100%;
+        height: calc(100vw / 1.202);// always same aspect ratio
         position: relative;
         object-fit: cover;
+    }
+
+    &__first-section {
+
+        background-color: $color-secondary-fifth;
+
+        &__content {
+            margin: $margin-top-mobile $margin-side-mobile;
+        }
+
+        &__title {
+            margin-top: $margin-top-mobile;
+            margin-bottom: 0;
+        }
+
+        &__text {
+            margin-top: $margin-side-mobile;
+            margin-bottom: 0;
+        }
+
+        &__more-link {
+            margin: $margin-top-mobile auto 0;
+        }
     }
 }
