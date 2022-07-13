@@ -610,4 +610,23 @@ h1, h2, h3, h4 {
 .main__stand-out__more-link a:hover::before {
   background-color: hsl(7deg, 99%, 70%);
   border-color: hsl(7deg, 99%, 70%);
+}
+.main__second-section__content {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+.main__graphic-design, .main__photography {
+  position: relative;
+}
+.main__graphic-design__image, .main__photography__image {
+  width: 100%;
+  height: 160vw;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.5;
+  /*@include screen-large {
+      width: 50%;
+      height: calc(50vw / 1.2);// always same aspect ratio
+  }*/
 }/*# sourceMappingURL=styles.css.map */

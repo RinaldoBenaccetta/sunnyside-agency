@@ -144,4 +144,34 @@
             }  
         }
     }
+
+    &__second-section {
+
+        &__content {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+        }
+    }
+
+    &__graphic-design, &__photography {
+
+        position: relative;
+
+        &__image {
+            width: 100%;
+            height: calc(100vw * 1.6);// always same aspect ratio
+            //position: relative;
+            object-fit: cover;
+
+            z-index: 0;
+
+            opacity: .5;
+
+            /*@include screen-large {
+                width: 50%;
+                height: calc(50vw / 1.2);// always same aspect ratio
+            }*/
+        }
+    }
 }
