@@ -449,14 +449,14 @@ h4 {
   color: hsl(210deg, 4%, 67%);
 }
 
-.footer__nav__link {
+.footer__main-nav__link {
   font-size: 18px;
   line-height: 25px;
   letter-spacing: -0.128571px;
   text-decoration: none;
   color: hsl(168deg, 34%, 41%);
 }
-.footer__nav__link:hover {
+.footer__main-nav__link:hover {
   color: hsl(0deg, 0%, 100%);
 }
 
@@ -742,6 +742,12 @@ h4 {
   height: 50vw;
   object-fit: cover;
 }
+@media screen and (min-width: 1024px) {
+  .footer__gallery__image {
+    width: 25%;
+    height: 31.05vw;
+  }
+}
 .footer__content {
   background-color: hsl(168deg, 44%, 70%);
   padding: 64px 39px 81px;
@@ -752,41 +758,32 @@ h4 {
 .footer__logo {
   width: 170px;
 }
-.footer__nav {
-  margin-top: 40px;
-  margin-bottom: 90px;
-  width: 100%;
+.footer__main-nav {
+  padding-top: 40px;
+  padding-bottom: 90px;
 }
-.footer__nav__list, .footer__nav__social {
+.footer__main-nav__list {
   margin: 0;
-}
-.footer__nav__list {
   padding: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   list-style-type: none;
 }
-.footer__social {
+.footer__main-nav__item {
+  margin: 0 28.5px;
+}
+.footer__social-nav__list {
+  margin: 0;
   padding: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   list-style-type: none;
 }
-.footer__social__item {
-  display: inline;
+.footer__social-nav__item {
   width: 20px;
   height: 20px;
+  margin: 0 14px;
 }
-.footer__social__link img:hover {
+.footer__social-nav__link img:hover {
   filter: brightness(1000%) grayscale(100%);
-}
-
-body {
-  background-color: green;
-}
-
-* {
-  border: 1px solid red;
 }/*# sourceMappingURL=styles.css.map */
