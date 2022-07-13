@@ -87,4 +87,24 @@ h1, h2, h3, h4 {
             
         }
     }
+
+    &__transform, &__stand-out {
+        &__more-link {
+
+            text-align: center;
+
+            a {
+                font-family: 'Fraunces', serif;
+                font-weight: 900;
+                font-size: 15px;
+                line-height: 25px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                text-decoration:none;
+
+                color: $color-secondary-first; 
+            }
+            
+        }
+    }
 }

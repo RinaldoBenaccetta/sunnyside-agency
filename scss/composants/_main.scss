@@ -2,63 +2,6 @@
     width: 100%;
     overflow: hidden;
 
-    &__transform__image, &__stand-out__image {
-        width: 100%;
-        height: calc(100vw / 1.202);// always same aspect ratio
-        position: relative;
-        object-fit: cover;
-    }
-
-    /*&__transform, &__stand-out {
-
-        &__more-link {
-            position: relative;
-
-            display: block;
-
-            margin: $margin-top-mobile auto 0;
-
-            height: 25px;
-
-            a {
-                position: relative;
-
-                display: inline-block;
-
-                height: 100%;
-
-                z-index: 0;
-
-                &::before {
-                    content: '';
-
-                    position: absolute;
-
-                    z-index: -1;
-
-                    width: 100%;
-                    height: 0;
-                    
-                    left: -5px;
-
-                    bottom: 0;
-
-                    background-color: $color-primary-second;
-                    border: 5px solid $color-primary-second;
-                    border-radius: 5px;
-                }
-
-                &:hover {
-                    &::before {
-                        background-color: $color-primary-second-hover;
-                       border-color: $color-primary-second-hover; 
-                    }
-                    
-                }
-            }
-        }
-    }*/
-
     &__first-section {
 
         background-color: $color-secondary-fifth;
@@ -76,7 +19,18 @@
             margin-top: $margin-side-mobile;
             margin-bottom: 0;
         }
+    }
 
+    &__transform__image, &__stand-out__image {
+        width: 100%;
+        height: calc(100vw / 1.202);// always same aspect ratio
+        position: relative;
+        object-fit: cover;
+    }
+
+    &__transform, &__stand-out {
+
+        // theming learn-more links
         &__more-link {
             position: relative;
 
@@ -108,10 +62,19 @@
                     left: -5px;
 
                     bottom: 0;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
 
+    // background color of transform link
+    &__transform {
+        &__more-link {
+          a {
+                &::before {
                     background-color: $color-primary-second;
                     border: 5px solid $color-primary-second;
-                    border-radius: 5px;
                 }
 
                 &:hover {
@@ -121,7 +84,28 @@
                     }
                     
                 }
-            }
+            }  
+        }
+        
+    }
+
+    // background color of stand-out link
+    &__stand-out {
+        &__more-link {
+          a {
+                &::before {
+                    background-color: $color-primary-first;
+                    border: 5px solid $color-primary-first;
+                }
+
+                &:hover {
+                    &::before {
+                        background-color: $color-primary-first-hover;
+                        border-color: $color-primary-first-hover; 
+                    }
+                    
+                }
+            }  
         }
     }
 }
