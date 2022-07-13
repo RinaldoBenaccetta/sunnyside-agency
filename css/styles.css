@@ -521,7 +521,8 @@ h1, h2, h3, h4 {
   background-color: hsl(0deg, 0%, 100%);
 }
 .main__first-section__content {
-  margin: 32px 24px;
+  box-sizing: border-box;
+  margin: 32px 24px 64px;
 }
 .main__first-section__title {
   margin-top: 32px;
@@ -538,9 +539,10 @@ h1, h2, h3, h4 {
   object-fit: cover;
 }
 .main__transform__more-link, .main__stand-out__more-link {
+  box-sizing: border-box;
   position: relative;
   display: block;
-  margin: 32px auto 0;
+  margin-top: 32px;
   height: 25px;
 }
 .main__transform__more-link a, .main__stand-out__more-link a {

@@ -7,7 +7,8 @@
         background-color: $color-secondary-fifth;
 
         &__content {
-            margin: $margin-top-mobile $margin-side-mobile;
+            box-sizing: border-box;
+            margin: $margin-top-mobile $margin-side-mobile ($margin-top-mobile*2);
         }
 
         &__title {
@@ -21,22 +22,24 @@
         }
     }
 
-    &__transform__image, &__stand-out__image {
-        width: 100%;
-        height: calc(100vw / 1.202);// always same aspect ratio
-        position: relative;
-        object-fit: cover;
-    }
-
     &__transform, &__stand-out {
 
-        // theming learn-more links
+        &__image {
+            width: 100%;
+            height: calc(100vw / 1.202);// always same aspect ratio
+            position: relative;
+            object-fit: cover;
+        }
+
+        // global theming of learn-more links
         &__more-link {
+            box-sizing: border-box;
+
             position: relative;
 
             display: block;
 
-            margin: $margin-top-mobile auto 0;
+            margin-top: $margin-top-mobile;
 
             height: 25px;
 
@@ -68,7 +71,7 @@
         }
     }
 
-    // background color of transform link
+    // specific yellow background color of transform link
     &__transform {
         &__more-link {
           a {
@@ -89,7 +92,7 @@
         
     }
 
-    // background color of stand-out link
+    // specific coral background color of stand-out link
     &__stand-out {
         &__more-link {
           a {
