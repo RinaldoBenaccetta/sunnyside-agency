@@ -532,11 +532,25 @@ h1, h2, h3, h4 {
   margin-top: 24px;
   margin-bottom: 0;
 }
+@media screen and (min-width: 1024px) {
+  .main__transform, .main__stand-out {
+    display: flex;
+  }
+  .main__transform:nth-child(odd), .main__stand-out:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+}
 .main__transform__image, .main__stand-out__image {
   width: 100%;
   height: 83.1946755408vw;
   position: relative;
   object-fit: cover;
+}
+@media screen and (min-width: 1024px) {
+  .main__transform__image, .main__stand-out__image {
+    width: 50%;
+    height: 41.6666666667vw;
+  }
 }
 .main__transform__more-link, .main__stand-out__more-link {
   box-sizing: border-box;

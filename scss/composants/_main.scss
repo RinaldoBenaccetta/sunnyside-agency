@@ -24,11 +24,26 @@
 
     &__transform, &__stand-out {
 
+        @include screen-large {
+            display: flex;
+
+            // put image of odd section at right
+            &:nth-child(odd) {
+                flex-direction: row-reverse;
+            }
+            
+        }
+
         &__image {
             width: 100%;
             height: calc(100vw / 1.202);// always same aspect ratio
             position: relative;
             object-fit: cover;
+
+            @include screen-large {
+                width: 50%;
+                height: calc(50vw / 1.2);// always same aspect ratio
+            }
         }
 
         // global theming of learn-more links
