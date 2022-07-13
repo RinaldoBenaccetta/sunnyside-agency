@@ -1,0 +1,13 @@
+.footer {
+    &__gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        &__image {
+            width: 50%;
+            height: 50vw;
+            object-fit: cover;
+        }
+    }
+}

@@ -719,4 +719,15 @@ h4 {
   display: block;
   margin: auto;
   border-radius: 50%;
+}
+
+.footer__gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.footer__gallery__image {
+  width: 50%;
+  height: 50vw;
+  object-fit: cover;
 }/*# sourceMappingURL=styles.css.map */
