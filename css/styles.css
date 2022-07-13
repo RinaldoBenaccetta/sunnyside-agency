@@ -449,6 +449,17 @@ h4 {
   color: hsl(210deg, 4%, 67%);
 }
 
+.footer__nav__link {
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.128571px;
+  text-decoration: none;
+  color: hsl(168deg, 34%, 41%);
+}
+.footer__nav__link:hover {
+  color: hsl(0deg, 0%, 100%);
+}
+
 .header {
   height: 538px;
   width: 100%;
@@ -730,4 +741,52 @@ h4 {
   width: 50%;
   height: 50vw;
   object-fit: cover;
+}
+.footer__content {
+  background-color: hsl(168deg, 44%, 70%);
+  padding: 64px 39px 81px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__logo {
+  width: 170px;
+}
+.footer__nav {
+  margin-top: 40px;
+  margin-bottom: 90px;
+  width: 100%;
+}
+.footer__nav__list, .footer__nav__social {
+  margin: 0;
+}
+.footer__nav__list {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.footer__social {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.footer__social__item {
+  display: inline;
+  width: 20px;
+  height: 20px;
+}
+.footer__social__link img:hover {
+  filter: brightness(1000%) grayscale(100%);
+}
+
+body {
+  background-color: green;
+}
+
+* {
+  border: 1px solid red;
 }/*# sourceMappingURL=styles.css.map */

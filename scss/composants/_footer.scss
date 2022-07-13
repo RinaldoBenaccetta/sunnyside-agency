@@ -10,4 +10,65 @@
             object-fit: cover;
         }
     }
+
+    &__content {
+        background-color: $color-primary-fifth;
+        padding: 64px 39px 81px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 170px;
+    }
+
+    &__nav {
+        margin-top: 40px;
+        margin-bottom: 90px;
+
+        width: 100%;
+
+        &__list, &__social {
+            margin: 0;
+        }
+
+        &__list {
+            padding: 0;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            list-style-type: none;
+        }
+    }
+
+    &__social {
+        padding: 0;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        list-style-type: none;
+    }
+
+    &__social {
+        &__item {
+            display: inline;
+            width: 20px;
+            height: 20px;
+        }
+
+        &__link {
+            img:hover {
+                // not terrible!
+                filter:
+                    brightness(1000%)
+                    grayscale(100%);  
+            }
+        }
+    }
 }

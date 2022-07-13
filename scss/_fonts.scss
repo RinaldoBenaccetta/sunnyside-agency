@@ -176,3 +176,23 @@ h4 {
         }
     }
 }
+
+.footer {
+    //text-align: center;
+    
+
+    &__nav {
+        &__link {
+            font-size: 18px;
+            line-height: 25px;
+            letter-spacing: -0.128571px;
+            text-decoration: none;
+
+            color: $color-primary-sixth;
+
+            &:hover {
+                color: $color-secondary-fifth;
+            }
+        }
+    }
+}
