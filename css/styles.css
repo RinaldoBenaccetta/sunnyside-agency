@@ -326,7 +326,7 @@ h4 {
   line-height: 49.32px;
   letter-spacing: 6.25px;
   text-align: center;
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(39deg, 100%, 99%);
   text-transform: uppercase;
 }
 @media screen and (min-width: 1024px) {
@@ -340,7 +340,7 @@ h4 {
   font-size: 18px;
   line-height: 25px;
   letter-spacing: -0.128571px;
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(39deg, 100%, 99%);
   text-decoration: none;
 }
 .header__main-nav__link:hover {
@@ -460,7 +460,7 @@ h4 {
   color: hsl(168deg, 34%, 41%);
 }
 .footer__main-nav__link:hover {
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(39deg, 100%, 99%);
 }
 
 .header {
@@ -535,7 +535,7 @@ h4 {
   box-sizing: border-box;
   height: 100%;
   padding: 15px 30px;
-  background: hsl(0deg, 0%, 100%);
+  background: hsl(39deg, 100%, 99%);
   border-radius: 28px;
 }
 .header__main-nav__hamburger__item {
@@ -585,9 +585,10 @@ h4 {
 .main {
   width: 100%;
   overflow: hidden;
+  background-color: hsl(39deg, 100%, 99%);
 }
 .main__first-section {
-  background-color: hsl(0deg, 0%, 100%);
+  background-color: hsl(39deg, 100%, 99%);
 }
 .main__first-section__content {
   box-sizing: border-box;
