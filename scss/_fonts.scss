@@ -19,6 +19,8 @@ h4 {
         letter-spacing: 6.25px;
         text-align: center;
         color: $color-secondary-fifth;
+
+        text-transform: uppercase;
     
         @include screen-large {
             font-size: 56px;

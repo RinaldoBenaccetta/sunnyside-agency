@@ -327,6 +327,7 @@ h4 {
   letter-spacing: 6.25px;
   text-align: center;
   color: hsl(0deg, 0%, 100%);
+  text-transform: uppercase;
 }
 @media screen and (min-width: 1024px) {
   .header__title {
