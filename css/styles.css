@@ -720,11 +720,46 @@ h4 {
 .main__testimonials {
   padding: 64px 24px;
 }
+@media screen and (min-width: 1024px) {
+  .main__testimonials {
+    padding: 160px 150px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 .main__testimonials__title {
+  display: block;
   padding-bottom: 64px;
+  width: 100%;
 }
 .main__testimonials__people {
+  box-sizing: border-box;
   padding-bottom: 86px;
+}
+@media screen and (min-width: 1024px) {
+  .main__testimonials__people {
+    width: 33.333%;
+    padding-bottom: 160px;
+  }
+  .main__testimonials__people__quote {
+    padding: 58px 15px 0;
+  }
+}
+.main__testimonials__people__quote {
+  margin: 0;
+  padding-top: 32px;
+}
+.main__testimonials__name, .main__testimonials__function {
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.main__testimonials__name {
+  padding-top: 32px;
+}
+.main__testimonials__function {
+  padding-top: 9px;
 }
 .main__testimonials__image {
   display: block;
