@@ -40,6 +40,7 @@ h4 {
             font-family: 'Fraunces', serif;
             text-transform: uppercase;
             font-weight: 700;
+            font-size: 15px;
         }
 
         &--active {
@@ -48,6 +49,7 @@ h4 {
             font-weight: 700;
             color: $color-secondary-first;
             text-decoration: none;
+            font-size: 15px;
         }
     }
 }

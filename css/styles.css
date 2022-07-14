@@ -347,6 +347,7 @@ h4 {
   font-family: "Fraunces", serif;
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 15px;
 }
 .header__main-nav__link--active {
   font-family: "Fraunces", serif;
@@ -354,6 +355,7 @@ h4 {
   font-weight: 700;
   color: hsl(212deg, 27%, 19%);
   text-decoration: none;
+  font-size: 15px;
 }
 
 .main__first-section__title {
