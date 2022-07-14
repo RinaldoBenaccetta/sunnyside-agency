@@ -596,6 +596,7 @@ h4 {
 @media screen and (min-width: 1024px) {
   .main__first-section__content {
     padding-top: 7.6325390404vw;
+    width: 50%;
   }
 }
 .main__first-section__title {

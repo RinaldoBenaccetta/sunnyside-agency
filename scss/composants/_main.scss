@@ -12,6 +12,7 @@
 
             @include screen-large {
                 padding-top: calc(((50vw / 1.202)/5.45));
+                width: 50%;
             }
         }
 
