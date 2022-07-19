@@ -14,6 +14,22 @@
                 width: 25%;
                 height: calc(25vw * 1.242);
             }
+
+            &::nth-child(1) {
+                background-color: $color-photo-blue;
+            }
+
+            &:nth-child(2) {
+                background-color: $color-photo-orange;
+            }
+
+            &:nth-child(3) {
+                background-color: $color-photo-blue;
+            }
+
+            &:nth-child(4) {
+                background-color: $color-photo-coral;
+            }
         }
     }
 

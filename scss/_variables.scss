@@ -1,4 +1,4 @@
-$dev: false;
+$dev: true;
 
 //// colors
 // primary
@@ -20,6 +20,14 @@ $color-secondary-second: hsl(213, 9%, 39%);
 $color-secondary-third: hsl(232, 10%, 55%);
 $color-secondary-fourth: hsl(210, 4%, 67%);
 $color-secondary-fifth: hsl(39, 100%, 99%);
+
+// image colors
+// theses are used behind images ta have colors while photos are downloaded
+$color-photo-blue: #3EBFFF;
+$color-photo-yellow: #FED501;
+$color-photo-coral: #FF7364;
+$color-photo-green: #8DCFC3;
+$color-photo-orange: #FF9801;
  
 //// layout
 

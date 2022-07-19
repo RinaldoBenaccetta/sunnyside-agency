@@ -109,6 +109,10 @@
     // specific yellow background color of transform link
     &__transform {
 
+        &__image {
+            background-color: $color-photo-yellow;
+        }
+
         &__more-link {
 
             a {
@@ -132,6 +136,10 @@
 
     // specific coral background color of stand-out link
     &__stand-out {
+
+        &__image {
+            background-color: $color-photo-coral;
+        }
 
         &__more-link {
 
@@ -207,6 +215,20 @@
             object-fit: cover;
 
             z-index: 0;
+        }
+    }
+
+    &__graphic-design {
+
+        &__image {
+            background-color: $color-photo-green;
+        }
+    }
+
+    &__photography {
+
+        &__image {
+            background-color: $color-photo-blue;
         }
     }
 
