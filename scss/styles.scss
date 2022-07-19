@@ -3,9 +3,9 @@
     'variables',
     'mixins',
     'fonts',
-    'composants/header',
-    'composants/main',
-    'composants/footer';
+    'components/header',
+    'components/main',
+    'components/footer';
 
 @if $dev == true {
     body {
