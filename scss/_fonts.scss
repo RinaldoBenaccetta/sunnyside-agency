@@ -12,6 +12,7 @@ h4 {
 }
 
 .header {
+
     &__title {
         font-size: 40px;
         line-height: 49.32px;
@@ -93,6 +94,7 @@ h4 {
     }
 
     &__transform, &__stand-out {
+
         &__more-link {
 
             text-align: center;
@@ -140,6 +142,7 @@ h4 {
     }
 
     &__testimonials {
+
         &__title {
             font-size: 16px;
             line-height: 20px;
@@ -181,10 +184,9 @@ h4 {
 }
 
 .footer {
-    //text-align: center;
     
-
     &__main-nav {
+
         &__link {
             font-size: 18px;
             line-height: 25px;
