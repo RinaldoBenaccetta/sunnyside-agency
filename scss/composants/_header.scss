@@ -5,7 +5,7 @@
 
     overflow: hidden;
 
-    @include screen-large {
+    @include media-screen-large {
         height: $height-desktop;
         height: calc(100vw / 1.8);// always same aspect ratio
     }
@@ -33,7 +33,7 @@
 
         padding: $margin-top-mobile $margin-side-mobile;
 
-        @include screen-large {
+        @include media-screen-large {
             padding: $margin-top-desktop $margin-side-desktop;
         }
 
@@ -55,14 +55,14 @@
     &__logo {
         height: 24px;
 
-        @include screen-large {
+        @include media-screen-large {
             height: 33px;
         }
     }
 
     &__main-nav {
 
-        @include screen-large {
+        @include media-screen-large {
             position: absolute;
             top: 36px;
             right: 48px;
@@ -99,7 +99,7 @@
         &__hamburger__item {
             height: 18px; //size of hamburger
 
-            @include screen-large {
+            @include media-screen-large {
                 display: none;
             }
         }
@@ -107,7 +107,7 @@
         &__list {
             display: none;
 
-            @include screen-large {
+            @include media-screen-large {
                 display: flex;
                 list-style-type: none;
                 height: 48px;
@@ -127,7 +127,7 @@
         margin-top: 88px;
         margin-bottom: 0;
 
-        @include screen-large {
+        @include media-screen-large {
             margin-top: 116px;
         }
     }
@@ -140,7 +140,7 @@
         justify-self: end;
         align-self: center;
 
-        @include screen-large {
+        @include media-screen-large {
             margin-top: 96px;
         }
     }

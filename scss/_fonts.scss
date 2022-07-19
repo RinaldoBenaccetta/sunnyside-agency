@@ -22,7 +22,7 @@ h4 {
 
         text-transform: uppercase;
     
-        @include screen-large {
+        @include media-screen-large {
             font-size: 56px;
             line-height: 69.05px;
             letter-spacing: 8.75px;
@@ -67,7 +67,7 @@ h4 {
 
             color: $color-secondary-first;
 
-            @include screen-large {
+            @include media-screen-large {
                 font-size: 40px;
                 line-height: 49px;
                 letter-spacing: -0.285714px;
@@ -84,7 +84,7 @@ h4 {
 
             color: $color-secondary-third;
 
-            @include screen-large {
+            @include media-screen-large {
                 font-size: 18px;
                 line-height: 30px;
                 letter-spacing: -0.128571px;
@@ -98,7 +98,7 @@ h4 {
 
             text-align: center;
 
-            @include screen-large {
+            @include media-screen-large {
                 text-align: left;
             }
 

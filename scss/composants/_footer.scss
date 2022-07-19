@@ -9,7 +9,7 @@
             height: 50vw;
             object-fit: cover;
 
-            @include screen-large {
+            @include media-screen-large {
                 width: 25%;
                 height: calc(25vw * 1.242);
             }

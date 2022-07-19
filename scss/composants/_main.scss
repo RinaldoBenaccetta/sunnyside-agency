@@ -12,7 +12,7 @@
             box-sizing: border-box;
             padding: ($margin-top-mobile*2) $margin-side-mobile ($margin-top-mobile*2);
 
-            @include screen-large {
+            @include media-screen-large {
                 padding-top: calc(((50vw / 1.202)/5.45));
                 width: 50%;
             }
@@ -30,7 +30,7 @@
 
     &__transform, &__stand-out {
 
-        @include screen-large {
+        @include media-screen-large {
             display: flex;
 
             // put image of odd section at right
@@ -61,7 +61,7 @@
             position: relative;
             object-fit: cover;
 
-            @include screen-large {
+            @include media-screen-large {
                 width: 50%;
                 height: calc(50vw / 1.2);// always same aspect ratio
             }
@@ -150,7 +150,7 @@
 
     &__second-section {
 
-        @include screen-large {
+        @include media-screen-large {
             display: flex;
         }
 
@@ -163,7 +163,7 @@
 
             padding: 0 $margin-side-mobile 59px;
 
-            @include screen-large {
+            @include media-screen-large {
                 padding: 0 calc(50vw / 3.79) 59px;
             }
 
@@ -192,7 +192,7 @@
 
         height: calc(100vw * 1.6);// always same aspect ratio
 
-        @include screen-large {
+        @include media-screen-large {
             width: 50%;
             height: calc(50vw / 1.2);// always same aspect ratio
         }
@@ -210,7 +210,7 @@
 
         padding: 2*$margin-top-mobile $margin-side-mobile;
 
-        @include screen-large {
+        @include media-screen-large {
             padding: 160px (165px-15px) 0; // remove 15px left and right padding to compensate for first and last people__quote
 
             display: flex;
@@ -230,7 +230,7 @@
 
             padding-bottom: 86px;
 
-            @include screen-large {
+            @include media-screen-large {
                 width: 33.333%;
                 padding-bottom: 160px;
 
