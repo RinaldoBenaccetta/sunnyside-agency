@@ -33,13 +33,10 @@
         @include media-screen-large {
             display: flex;
 
-            // put image of odd section at right
             &:nth-child(odd) {
                 flex-direction: row-reverse;
-            }
 
-            // define left and right padding 
-            &:nth-child(odd) {
+                // define left and right padding 
                 .main__first-section__content {
                     padding-right: calc(50vw / 6.55);// right smaller
                     padding-left: calc(50vw / 4.36);
@@ -47,6 +44,7 @@
             }
 
             &:nth-child(even) {
+                // define left and right padding 
                 .main__first-section__content {
                     padding-right: calc(50vw / 4.36);
                     padding-left: calc(50vw / 6.55);//left smaller
