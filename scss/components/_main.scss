@@ -86,6 +86,7 @@
 
                 z-index: 0;
 
+                // add rounded line in background of the line
                 &::before {
                     content: '';
 
@@ -96,7 +97,7 @@
                     width: 100%;
                     height: 0;
                     
-                    left: -5px;
+                    left: -5px;// because border radius is 5px and push the box
 
                     bottom: 0;
                     border-radius: 5px;
@@ -107,8 +108,11 @@
 
     // specific yellow background color of transform link
     &__transform {
+
         &__more-link {
-          a {
+
+            a {
+
                 &::before {
                     background-color: $color-primary-second;
                     border: 5px solid $color-primary-second;
@@ -128,8 +132,11 @@
 
     // specific coral background color of stand-out link
     &__stand-out {
+
         &__more-link {
-          a {
+
+            // different colors for the links backgrounds
+            a {
                 &::before {
                     background-color: $color-primary-first;
                     border: 5px solid $color-primary-first;
@@ -185,7 +192,6 @@
     }
 
     &__graphic-design, &__photography {
-
         position: relative;
 
         height: calc(100vw * 1.6);// always same aspect ratio
@@ -205,7 +211,6 @@
     }
 
     &__testimonials {
-
         padding: 2*$margin-top-mobile $margin-side-mobile;
 
         @include media-screen-large {
@@ -263,6 +268,7 @@
             display: block;
             margin: auto;
 
+            // make round
             border-radius: 50%;
         }
 
