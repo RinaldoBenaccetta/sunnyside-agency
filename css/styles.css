@@ -744,13 +744,15 @@ h4 {
     width: 33.333%;
     padding-bottom: 160px;
   }
-  .main__testimonials__people__quote {
-    padding: 58px 15px 0;
-  }
 }
 .main__testimonials__people__quote {
   margin: 0;
   padding-top: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .main__testimonials__people__quote {
+    padding: 58px 15px 0;
+  }
 }
 .main__testimonials__name, .main__testimonials__function {
   margin: 0;

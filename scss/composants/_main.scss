@@ -233,15 +233,15 @@
             @include media-screen-large {
                 width: 33.333%;
                 padding-bottom: 160px;
-
-                &__quote {
-                    padding: 58px 15px 0;
-                }
             }
 
             &__quote {
                 margin: 0;
                 padding-top: 32px;
+
+                @include media-screen-large {
+                    padding: 58px 15px 0;
+                }
             }
         }
 
