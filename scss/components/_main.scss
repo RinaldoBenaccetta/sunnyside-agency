@@ -54,9 +54,13 @@
         }
 
         &__image {
+            display: block;// background color cover all the container
+
             width: 100%;
             height: calc(100vw / 1.202);// always same aspect ratio
+
             position: relative;
+            
             object-fit: cover;
 
             @include media-screen-large {
@@ -210,8 +214,11 @@
         }
 
         &__image {
+            display: block;// background color cover all the container
+
             width: 100%;
             height: 100%;
+            
             object-fit: cover;
 
             z-index: 0;
@@ -286,9 +293,15 @@
         }
 
         &__image {
-            //center image
+            width: 144px;
+            height: 144px;
+            
             display: block;
+
+            //center image
             margin: auto;
+
+            background-color: $color-photo-poeple;
 
             // make round
             border-radius: 50%;

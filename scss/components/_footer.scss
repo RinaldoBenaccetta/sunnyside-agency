@@ -6,8 +6,11 @@
         flex-wrap: wrap;
 
         &__image {
+            display: block;// background color cover all the container
+            
             width: 50%;
             height: 50vw;
+
             object-fit: cover;
 
             @include media-screen-large {
